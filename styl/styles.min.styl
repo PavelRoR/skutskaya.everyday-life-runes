@@ -94,12 +94,78 @@ footer
 		right 0
 		bottom 0
 		cursor pointer
-
-@import 'main/main'
-@import 'main/for'
-@import 'main/plan'
-@import 'main/get'
-@import 'main/prices'
-@import 'main/record'
-@import 'main/footer'
-@import 'main/medias'
+.button
+	display block
+	margin 0 auto
+	height 55px
+	line-height 55px
+	width 100%
+	max-width 300px
+	border-radius: 3px
+	border: 1px solid rgba(#fff,.9)
+	background-color: #FFA500
+	box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.1);
+	text-align: center
+	color: #fff
+	text-decoration: none
+	font-size: 20px
+	transition: all .4s ease
+	text-transform: uppercase
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		text-decoration: none
+		color #000
+		background-color: #FFD700
+.general-title
+	font-size: 34px;
+	font-family: RBB
+	color: rgb(0, 0, 0);
+	text-align: center
+	line-height: 1.3
+	margin-bottom: 4%
+	color #FFAB0F
+	span
+		display: inline-block
+.general-list
+	width 100%
+	max-width 860px
+	margin 0 auto
+	padding-left: 10px
+	li
+		list-style none
+		font-size: 20px
+		margin-bottom: 20px;
+		padding-left: 25px
+		position relative
+		&:before
+		&:after
+			content: ''
+			display block
+			position: absolute
+			width 10px
+			height 10px
+			background-color: transparent
+			transform: rotate(-45deg)
+		&:before
+			border-top: 2px solid #FFAB0F
+			border-left: 2px solid #FFAB0F
+			top 5px
+			left 0
+		&:after
+			border-right: 2px solid #FFAB0F
+			border-bottom: 2px solid #FFAB0F
+			top 11px
+			left 3px
+		&:last-child
+			margin-bottom: 0
+@import 'main/0.header'
+@import 'main/1.main'
+@import 'main/2.for'
+@import 'main/3.plan'
+@import 'main/4.get'
+@import 'main/5.prices'
+@import 'main/6.record'
+@import 'main/7.footer'
+@import 'main/8.medias'
