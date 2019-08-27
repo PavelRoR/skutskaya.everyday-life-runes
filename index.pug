@@ -1,0 +1,33 @@
+-var head_url = 'https://skutskaya.mastervision.su/everyday-life-runes/';
+-var head_title = '«Руны в быту»';
+-var head_description = 'Запись онлайн-мастер-класса Анны Скуцкой';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+-var fb_content = '2030481470529055';
+-var oferta = 'oferta/oferta.doc';
+
+mixin gt(cl,h3)
+	h3.general-title(class= cl)= h3
+mixin gl(cl,...items)
+	ul.general-list(class= cl)
+		each item in items
+			li= item
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/main/1.main.pug
+		include pug/main/2.for.pug
+		include pug/main/3.plan.pug
+		include pug/main/4.get.pug
+		include pug/main/5.prices.pug
+		include pug/main/6.record.pug
+		include pug/main/7.footer.pug
+		include pug/scripts
+		//- include pug/scripts/callback
+		include pug/scripts/body_bottom_scripts

@@ -1,0 +1,105 @@
+RB = 'RobotoSlab', serif
+RBB = 'RobotoSlabBold', serif
+RBL = 'RobotoSlabLight', serif
+
+@font-face {
+	font-family: 'RobotoSlab';
+	src: url('../fonts/RobotoSlab.eot');
+	src: url('../fonts/RobotoSlab.eot') format('embedded-opentype'),
+		 url('../fonts/RobotoSlab.woff2') format('woff2'),
+		 url('../fonts/RobotoSlab.woff') format('woff'),
+		 url('../fonts/RobotoSlab.ttf') format('truetype'),
+		 url('../fonts/RobotoSlab.svg#RobotoSlab') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RobotoSlabBold';
+	src: url('../fonts/RobotoSlabBold.eot');
+	src: url('../fonts/RobotoSlabBold.eot') format('embedded-opentype'),
+		 url('../fonts/RobotoSlabBold.woff2') format('woff2'),
+		 url('../fonts/RobotoSlabBold.woff') format('woff'),
+		 url('../fonts/RobotoSlabBold.ttf') format('truetype'),
+		 url('../fonts/RobotoSlabBold.svg#RobotoSlabBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RobotoSlabLight';
+	src: url('../fonts/RobotoSlabLight.eot');
+	src: url('../fonts/RobotoSlabLight.eot') format('embedded-opentype'),
+		 url('../fonts/RobotoSlabLight.woff2') format('woff2'),
+		 url('../fonts/RobotoSlabLight.woff') format('woff'),
+		 url('../fonts/RobotoSlabLight.ttf') format('truetype'),
+		 url('../fonts/RobotoSlabLight.svg#RobotoSlabLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+@import '../css/_css/flipclock.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-family: RB
+	font-size: 18px
+	line-height: 1.3
+	color: rgb(0, 0, 0);
+	background-color: rgba(82,72,62,.05)
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+
+@import 'main/main'
+@import 'main/for'
+@import 'main/plan'
+@import 'main/get'
+@import 'main/prices'
+@import 'main/record'
+@import 'main/footer'
+@import 'main/medias'
